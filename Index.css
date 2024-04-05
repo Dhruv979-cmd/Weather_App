@@ -1,0 +1,64 @@
+/* Background Color and animation */
+body {
+    margin:0;padding:0;height: 100vh;
+    background: linear-gradient(45deg, #00032e,#003376,black);background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+/* Background Color and animation */
+#card{
+position:absolute;
+top:50%;left:50%;transform:translate(-50%, -50%);
+background:rgba(0,0,0,0.4);
+box-shadow:10px 10px 25px rgb(195, 195, 195);
+height:340px;width:580px;
+border-radius:50px;
+font-family:cursive;
+}
+/* BAckground Animation */
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+/* BAckground Animation */
+#temp{
+position:absolute;top:30%;right:14%;
+text-align:center;color:white;
+font-size:80px;
+}
+#weather{
+position:absolute;top:63%;right:37%;
+color:white;font-size:25px;
+}
+#name{
+position:absolute;top:72%;right:22%;
+color:white;font-size:40px;font-weight:bolder;
+}
+#country{
+position:absolute;top:72%;right:10%;
+color:white;font-size:40px;font-weight:bolder;
+}
+#icon{
+position: absolute;top:3%;left:-20%;
+filter:drop-shadow(0px 0px 15px white);
+} 
+form{
+position: absolute;top:8%;
+left:9%;
+}
+#city{
+font-family:monospace;
+height:30px;width:120%;border-radius:25px;padding:10px;
+font-size:30px;text-align:center;text-transform:capitalize;
+}#city::placeholder{
+font-size:30px;text-align:center;
+} 
+#btn{
+    position: absolute;right:-30%;
+}
